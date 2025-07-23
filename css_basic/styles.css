@@ -1,1 +1,24 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
 
+main{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article{
+    flex: 2;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+aside{
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+}
