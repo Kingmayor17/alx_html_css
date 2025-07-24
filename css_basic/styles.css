@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-color: green;
 }
 
 main{
@@ -14,11 +14,34 @@ article{
     flex: 2;
     padding: 20px;
     overflow-y: auto;
+    background-color: #fff8f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 aside{
     flex: 1;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color:aquamarine
     overflow-y: auto;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+  
+}
+
+footer {
+  background-color: #00264d;
+  color: #ccc;
+  text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
