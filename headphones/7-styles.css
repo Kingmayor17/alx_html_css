@@ -1,0 +1,562 @@
+:root {
+    --primary-color: #ff4d4d;
+    --text-color: #fff;
+    --max-width: 800px;
+    --dark-bg: darkblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+main {
+    min-height: 100vh;
+    background-image: url(headphones_hero_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0f0f0; /* Fallback */
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.navs {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 2px;
+}
+
+.hero {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-color);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .herop {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.hero .writeup {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.wedo {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.wedo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.wedo p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: var(--max-width);
+    margin: 0 auto 2rem;
+}
+
+.section-two-part-two {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.sub-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.sub-section svg {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.sub-section p:first-of-type {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.sub-section p:last-of-type {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.hero2 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 1rem;
+    background-image: url(headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #f0f0f0; /* Fallback */
+    color: var(--text-color);
+    min-height: 50vh;
+}
+
+.hero2 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero2 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+}
+
+.section-three-part-two {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.2rem;
+    justify-items: center;
+}
+
+.pentagon {
+    width: 200px;
+    height: 200px;
+    background: var(--primary-color);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.pentagon h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.pentagon p {
+    font-size: 1rem;
+}
+
+.contact {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.submit {
+    width: fit-content;
+    padding: 1.5rem 2.5rem;
+    cursor: pointer;
+    margin: 0 auto;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    transition: background 0.3s;
+}
+
+.submit:hover {
+    background: #e63b3b;
+}
+
+footer {
+    background: #071629;
+    color: var(--text-color);
+    padding: 2rem 1rem;
+    min-height: 40vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.Logo img {
+    object-fit: contain;
+    width: 200px;
+}
+
+.footer-navs {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-navs p {
+    margin: 0;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.footer-navs p:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    margin-top: 5rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.nav-list {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .section-two-part-two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+    }
+    .navs {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .logo {
+        width: 40%;
+        min-height: 10vh;
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .hero {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .hero .herop {
+        font-size: 1rem;
+    }
+    .hero button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+    }
+    .hero .writeup {
+        font-size: 0.95rem;
+    }
+    .hero2 {
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+    .hero2 h2 {
+        font-size: 2rem;
+    }
+    .hero2 p {
+        font-size: 1rem;
+    }
+    .section-three-part-two {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .pentagon {
+        padding: 1.5rem;
+    }
+    .contact {
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+    input, textarea {
+        font-size: 1rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-navs {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wedo h2 {
+        font-size: 1.8rem;
+    }
+    .wedo p {
+        font-size: 0.95rem;
+    }
+    .section-two-part-two {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .sub-section svg {
+        max-width: 60px;
+    }
+    .sub-section p:first-of-type {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+    .hero .herop {
+        font-size: 0.9rem;
+    }
+    .hero button {
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+        
+    }
+    .hero .writeup {
+        font-size: 0.9rem;
+    }
+    .section-two-part-two {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .hero2 h2 {
+        font-size: 1.6rem;
+    }
+    .hero2 p {
+        font-size: 0.95rem;
+    }
+    .section-three-part-two {
+        grid-template-columns: 1fr;
+    }
+    .pentagon {
+        max-width: 100%;
+    }
+    .contact {
+        width: 95%;
+        padding: 1.5rem 1rem;
+    }
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+    input, textarea {
+        font-size: 0.95rem;
+        padding: 0.7rem;
+    }
+    button {
+        font-size: 0.95rem;
+        padding: 0.9rem;
+    }
+    .footer-navs {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .logo img {
+        max-width: 100px;
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 90vw;
+        min-height: auto;
+        top: 100px;
+        left: 18px;
+        color: var(--text-color);
+        gap: 2rem;
+        background-color: var(--primary-color);
+        align-items: center;
+        padding: 4rem 0;
+        border-radius: 10px;
+        display: none;
+        transition: 0.3s ease-in;
+    }
+    .nav-list.active {
+        display: flex;
+    }
+}
+
+/* 🔥 Fade-in animation for sections */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔥 Pulse animation for button */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* 🔥 Floating animation for pentagons */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ================= ANIMATIONS ADDED ================= */
+.hero h2, .hero .herop, .hero button, .hero .writeup {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.hero h2 { animation-delay: 0.2s; }
+.hero .herop { animation-delay: 0.4s; }
+.hero button { animation-delay: 0.6s; }
+.hero .writeup { animation-delay: 0.8s; }
+
+.hero button:hover {
+    animation: pulse 0.6s ease-in-out;
+}
+
+/* Sub-sections fade in */
+.sub-section {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+.sub-section:nth-child(1) { animation-delay: 0.2s; }
+.sub-section:nth-child(2) { animation-delay: 0.4s; }
+.sub-section:nth-child(3) { animation-delay: 0.6s; }
+.sub-section:nth-child(4) { animation-delay: 0.8s; }
+
+/* Pentagon floating effect */
+.pentagon {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Links hover */
+.navs p, .footer-navs p {
+    transition: transform 0.3s ease, text-decoration 0.3s;
+}
+.navs p:hover, .footer-navs p:hover {
+    transform: translateY(-3px);
+}
+
+/* Submit button hover */
+.submit {
+    transition: transform 0.3s ease, background 0.3s;
+}
+.submit:hover {
+    transform: scale(1.05);
+}
